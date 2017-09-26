@@ -1,4 +1,4 @@
-/* Javascript Map for Bind Truck Apparatus Type to respective public image path. */
+/* Javascript Map for Bind Truck Apparatus Type to respective public image path.*/
 var FT_truckTypeImageUrl = {
 	'FooterBellImg':'https://brindlee--c.na78.content.force.com/servlet/servlet.ImageServer?id=0151N000003fIoK&oid=00Do0000000JLLE&lastMod=1499264854000',
 	'Default' : 'https://c.na78.content.force.com/servlet/servlet.ImageServer?id=0151N000003exvn&oid=00Do0000000JLLE&lastMod=1497451382000',
