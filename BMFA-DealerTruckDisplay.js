@@ -712,7 +712,7 @@ var FT_prepareImageContainer = function( isForCategory, truckDataList, UICclass 
     var ul = document.createElement('ul');
     ul.className = 'FT_listStyle ' + UICclass;
     for(var truck in truckDataList) {
-        if( truckDataList..hasOwnProperty( truck ) ) { //added to avoid iterating through object _proto properties
+        if( truckDataList.hasOwnProperty( truck ) ) { //added to avoid iterating through object _proto properties
             if(truckDataList[truck] || isForCategory) {
                 if( isForCategory ) {
                     var imgSrc = '';
