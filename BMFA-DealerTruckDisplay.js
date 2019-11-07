@@ -584,7 +584,8 @@ function FT_getDistinctFilters( containerDiv ){
 		var filterObj = {
 			accountId: FT_BMFA_TruckContainer.getAttribute('accountId')
 		};
-		var customURL = apiServiceBaseLink + "DistinctFilter?isSandbox="+isSandbox;
+		//var customURL = apiServiceBaseLink + "DistinctFilter?isSandbox="+isSandbox;
+		var customURL = apiServiceBaseLink + "DistinctFilter?isSandbox=true";
 		
 		FT_WebRequestHandler.postRequestCustom(JSON.stringify(filterObj), customURL, FT_getDistinctFiltersCallback, callbackAdditionalParams );
 	} else {
@@ -879,7 +880,8 @@ var FT_requestSearchTrucks = function( strFilterData, fromBackButton ) {
 	//show loader before requesting data from server
 	/*FT_BMFA_TruckContainer.innerHTML = FT_LoaderHtml.FT_format([FT_ThemeProperties.background, FT_translatableStrings['loaderText']]);*/
 	FT_showSearchLoader();
-	var customURL = apiServiceBaseLink+"SearchTruck?isSandbox="+isSandbox;
+	//var customURL = apiServiceBaseLink+"SearchTruck?isSandbox="+isSandbox;
+	var customURL = apiServiceBaseLink + "SearchTruck?isSandbox=true";
 	FT_WebRequestHandler.postRequestCustom( strFilterData, customURL, function (xhttp) {
 		if (xhttp && xhttp.readyState == 4 && xhttp.status == 200) {
 			var serverResponse = JSON.parse(xhttp.responseText);
