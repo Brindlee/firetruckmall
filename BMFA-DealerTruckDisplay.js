@@ -3,7 +3,7 @@ var isPgFilterApply = false;
 var totalPageNo = 0;
 var isPrevious = false;
 var isIndexPage = false;
-var searchTerm = '';jkhjkjhkj
+var searchTerm = '';
 var sandboxServiceUrl = 'https://brindlee--dev.cs43.my.salesforce.com/services/apexrest/';
 var productionServiceUrl = 'https://www.firetruckmall.com/services/apexrest/';
 var head = document.getElementsByTagName('head')[0];
@@ -1227,14 +1227,14 @@ var FT_constructBackButton = function(toword) {
     var button = document.createElement('a');
     button.style.textAlign = "left";
     if( toword == 'To Categories' ) {
-        button.innerText = '« '+FT_translatableStrings['backToCatPageText'];
+        button.innerText = 'Â« '+FT_translatableStrings['backToCatPageText'];
     } else if( toword == 'To Truck List' ) {
-        button.innerText = '« '+FT_translatableStrings['backToTrucksPageText'];
+        button.innerText = 'Â« '+FT_translatableStrings['backToTrucksPageText'];
     } else if( toword == 'To Search List' ){
-        button.innerText = '« ' + FT_translatableStrings['backToTrucksSearchText'];
+        button.innerText = 'Â« ' + FT_translatableStrings['backToTrucksSearchText'];
     }
     else {
-        button.innerText = '« Return ' + toword;
+        button.innerText = 'Â« Return ' + toword;
     }   
     button.className='FT_backLink';
     button.setAttribute('jData', toword);
@@ -5224,4 +5224,3 @@ var FT_callSiteDownAlertService = function( reason ) {
             
     FT_WebRequestHandler.postRequestCustom( JSON.stringify( serviceParams ), customURL, FT_callSiteDownAlertServiceCallback );
 }
-
